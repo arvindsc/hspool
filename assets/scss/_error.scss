@@ -1,0 +1,33 @@
+/* Error Area css
+============================================================================================ */
+.error_area {
+  text-align: center;
+  .logo {
+    padding-top: 60px;
+  }
+  h5 {
+    font: 600 14px $mon;
+    color: $orange;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    margin-top: 150px;
+    margin-bottom: 25px;
+  }
+  h4 {
+    font: 700 36px $mon;
+    margin-bottom: 65px;
+  }
+  .error_text {
+    display: block;
+    margin: auto;
+  }
+  .theme_btn_two {
+    margin-top: 85px;
+    font: 600 16px $mon;
+    height: 54px;
+    width: 220px;
+    padding: 0px;
+  }
+}
+/* End Error Area css
+============================================================================================ */

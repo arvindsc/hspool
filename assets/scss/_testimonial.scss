@@ -1,0 +1,434 @@
+/*==========  cons_testimonial_area css ========*/
+.cons_testimonial_area {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 0px;
+}
+.cons_custom_left {
+  width: calc(50% - 595px);
+}
+.cons_custom_right {
+  width: calc(50% + 595px);
+}
+.cons_testimonial_slider {
+  margin-bottom: 0px !important;
+  .slick-list {
+    padding-left: 35px !important;
+    margin-left: -20px;
+  }
+  .item {
+    padding: 70px 35px 90px 0px;
+    .testimonial_content {
+      border-radius: 2px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 35px 18px 150px 0px rgba(30, 34, 40, 0.1);
+      opacity: 0.3;
+      padding: 25px 100px 70px;
+      transition: opacity 0.3s linear;
+      .quote_icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #f2e1c2;
+        text-align: center;
+        font-size: 18px;
+        color: $orange;
+        line-height: 60px;
+        display: inline-block;
+        position: relative;
+        top: -50px;
+        &:before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          border-radius: 50%;
+          border: 1px solid #f2e1c2;
+          height: 100%;
+          left: 0;
+          top: 0;
+          transform: scale(1.3);
+        }
+      }
+    }
+    &.slick-center {
+      .testimonial_content {
+        opacity: 1;
+      }
+    }
+  }
+  &.testimonial_round {
+    .item {
+      .testimonial_content {
+        .quote_icon {
+          background: $orange;
+          color: #fff;
+          &:before {
+            border-color: $orange;
+          }
+        }
+      }
+    }
+  }
+}
+.slick-dots {
+  bottom: 0;
+  li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 3px;
+    button {
+      width: 8px;
+      height: 8px;
+      padding: 0px;
+      border-radius: 50%;
+      background: #ecdcbd;
+      transition: all 0.2s linear;
+      &:before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        opacity: 1;
+        border: 1px solid $orange;
+        margin-top: -7px;
+        margin-left: -7px;
+        transform: scale(0);
+        transition: all 0.3s linear;
+      }
+    }
+    &.slick-active,
+    &:hover {
+      button {
+        background: $orange;
+        &:before {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+.testimonail_text {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 56px;
+  strong {
+    font-weight: 600;
+  }
+}
+.testimonail_author {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: $pcolor;
+  margin-top: 50px;
+  .img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+  }
+}
+/*==========  cons_testimonial_area css ========*/
+
+/*==========  cons_testimonail_area_two css ========*/
+.cons_testimonail_area_two {
+  padding: 100px 0px;
+  .section_title_one {
+    margin-bottom: 75px;
+  }
+}
+.cons_testimonail_slider_two {
+  max-width: 770px;
+  margin: 0 auto;
+  text-align: center;
+  .testimonail_author {
+    justify-content: center;
+  }
+}
+.slick-prev,
+.slick-next {
+  width: 80px;
+  height: 80px;
+  background: #f2e1c2;
+  border-radius: 50%;
+  color: #fff;
+  opacity: 1;
+  z-index: 1;
+  transition: all 0.3s linear;
+  top: auto;
+  bottom: 0;
+  transform: translateY(0);
+  &:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    opacity: 1;
+  }
+  &:hover,
+  &:focus {
+    background: $orange;
+    color: #fff;
+  }
+  &.slick-prev {
+    left: 0;
+    &:before {
+      content: "\f0d9";
+    }
+  }
+  &.slick-next {
+    right: 0;
+    &:before {
+      content: "\f0da";
+    }
+  }
+}
+
+.testimonail_arrow {
+  .slick-prev,
+  .slick-next {
+    border: 1px solid #f2e1c2;
+    color: #f2e1c2;
+    background: transparent;
+    &:before {
+      color: #f2e1c2;
+    }
+    &:hover {
+      border-color: $orange;
+      background: $orange;
+      &:before {
+        color: #fff;
+      }
+    }
+  }
+}
+/*==========  cons_testimonail_area_two css ========*/
+
+/*==========  cons_testimonail_area_three css ========*/
+.testimonial_info {
+  position: relative;
+  .custom_prev,
+  .custom_next {
+    position: absolute;
+    top: 100px;
+  }
+  .custom_prev {
+    left: 0;
+  }
+  .custom_next {
+    right: 0;
+  }
+}
+.testimonial_thumbnil {
+  max-width: 180px;
+  margin: 45px auto 0px;
+  .slick-list {
+    overflow: visible;
+  }
+  .item {
+    .round_img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid transparent;
+      margin-right: 0;
+      margin-left: auto;
+      opacity: 0.4;
+      transition: all 0.2s linear;
+    }
+    .content {
+      width: 150px;
+      text-align: center;
+      transform: scale(0.3);
+      transition: all 0.3s linear;
+      margin-left: -30px;
+      padding-top: 28px;
+      h6 {
+        font-size: 18px;
+        font-weight: 700;
+        color: $h_color;
+        opacity: 0;
+        margin-bottom: 3px;
+      }
+      p {
+        font-size: 14px;
+        color: $pcolor;
+        opacity: 0;
+        margin-bottom: 0;
+      }
+    }
+    &.slick-center {
+      margin-right: 0px;
+      z-index: 2;
+      position: relative;
+      .round_img {
+        transform: scale(1.15);
+        opacity: 1;
+        border-color: #fff;
+      }
+      .content {
+        transform: scale(1);
+        h6,
+        p {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+/*==========  cons_testimonail_area_three css ========*/
+
+/*==========  cons_action_area_three css ========*/
+.cons_action_area_three {
+  padding: 100px 0px 60px;
+}
+.cons_action_info_three {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  .cons_action_content {
+    flex: 1;
+    display: flex;
+    padding-right: 100px;
+    i {
+      font-size: 50px;
+      color: #7e8288;
+      margin-right: 30px;
+      margin-top: 5px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+.cons_action_info_five {
+  p {
+    font-size: 24px;
+    line-height: 44px;
+  }
+}
+/*==========  cons_action_area_three css ========*/
+
+/*==========  cons_action_area_five css ========*/
+.cons_action_area_five {
+  padding-bottom: 100px;
+}
+/*==========  cons_action_area_five css ========*/
+
+/*==========  cons_testimonial_area_six css ========*/
+.cons_testimonial_area_six {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 0px;
+  .cons_testimonial_slider {
+    .item {
+      padding-top: 0;
+      .testimonial_content {
+        box-shadow: none;
+        padding: 0px;
+        opacity: 1;
+        padding-right: 150px;
+        .quote_icon {
+          top: 0;
+          border: 1px solid $orange;
+          background: transparent;
+          margin-bottom: 57px;
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+    .slick-dots {
+      text-align: left;
+      position: relative;
+      margin-top: 0px;
+    }
+  }
+}
+/*==========  cons_testimonial_area_six css ========*/
+
+/*==========  cons_twitter_area css ========*/
+.cons_twitter_area {
+  padding: 200px 0px 0px;
+}
+.twitter_info {
+  background: #faf9fb;
+  padding: 45px 70px;
+  display: flex;
+  .twitter_slider {
+    max-width: 630px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    a {
+      font-weight: 500;
+      color: $orange;
+    }
+    i {
+      font-size: 50px;
+      margin-right: 30px;
+    }
+  }
+  .custom_arrow {
+    flex: 1;
+    text-align: right;
+  }
+}
+/*==========  cons_twitter_area css ========*/
+
+/*==========  cons_twitter_area_two css ========*/
+.cons_twitter_area_two {
+  padding-top: 100px;
+}
+/*==========  cons_twitter_area_two css ========*/
+
+/*==========  cons_testimonail_area_seven css ========*/
+.cons_testimonail_area_seven {
+  padding: 50px 0px 100px;
+  .quote_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    text-align: center;
+    color: $orange;
+    font-size: 15px;
+    background: #fafafa;
+    line-height: 60px;
+    margin-bottom: 25px;
+  }
+}
+/*==========  cons_testimonail_area_seven css ========*/
+
+/*==========  cons_action_content_five css ========*/
+.cons_action_content_five {
+  h2 {
+    font-size: 60px;
+    line-height: 76px;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+  }
+  .contact_btn {
+    font-size: 18px;
+    background: url(../img/home-18/btn_bg.png) no-repeat scroll center 0 / cover;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    padding: 15px 74px;
+    border-radius: 2px;
+    margin-top: 90px;
+    &:hover {
+      box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.2);
+    }
+  }
+}
+/*==========  cons_action_content_five css ========*/

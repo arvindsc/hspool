@@ -1,0 +1,385 @@
+/*============ cons_features_area css ========*/
+.cons_features_area {
+  padding-top: 100px;
+  .cons_about_content {
+    padding-right: 100px;
+  }
+}
+.features_img {
+  position: relative;
+  z-index: 1;
+}
+.dot_middle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: -1;
+}
+/*============ cons_features_area css ========*/
+
+/*============ cons_action_area css ========*/
+.cons_action_info {
+  box-shadow: 0px 45px 150px 0px rgba(242, 225, 194, 0.2);
+  border-radius: 2px;
+  background: $orange;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 86px 100px;
+  align-items: center;
+  .text {
+    color: #fff;
+    font-size: 24px;
+    line-height: 44px;
+    font-weight: 500;
+    flex: 1;
+    max-width: 65%;
+  }
+  .a_btn {
+    max-width: 35%;
+    flex: 1;
+    .theme_btn {
+      min-width: 220px;
+    }
+  }
+  h2 {
+    font-size: 36px;
+    color: #7e8288;
+    flex: 1;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+}
+/*============ cons_action_area css ========*/
+
+/*============ cons_action_area two css ========*/
+.cons_action_area_two {
+  padding: 100px 0px;
+}
+.cons_action_info_two {
+  border-radius: 2px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(253, 168, 33, 0.99608) 0%,
+    rgb(242, 134, 7) 100%
+  );
+  box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.2);
+  position: relative;
+  z-index: 1;
+  margin-top: 200px;
+  .sitting_img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .action_img {
+    margin-top: -220px;
+    margin-left: -90px;
+  }
+  .action_text {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    h4 {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      line-height: 44px;
+      flex: 1;
+    }
+    .theme_btn {
+      background: $orange;
+      padding: 10px 70px;
+      margin-left: 70px;
+      &:after {
+        background: #fff;
+      }
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}
+/*============ cons_action_area two css ========*/
+/*============ cons_action_area_four css ========*/
+.cons_action_area_four {
+  padding: 100px 0px 50px;
+}
+.cons_action_info_white {
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.2);
+  .text {
+    color: $h_color;
+  }
+}
+/*============ cons_action_area_four css ========*/
+/*============ cons_action_area_five css ========*/
+.cons_action_area_five {
+  .cons_action_info {
+    margin-top: -130px;
+    position: relative;
+    z-index: 1;
+    .text {
+      color: $pcolor;
+    }
+  }
+}
+/*============ cons_action_area_five css ========*/
+/*============ cons_action_area_six css ========*/
+.cons_action_area_six {
+  .cons_action_info {
+    margin-top: -61px;
+    background: #f2e1c2;
+    .text {
+      color: $orange;
+    }
+  }
+}
+/*============ cons_action_area_six css ========*/
+
+/*============ cons_work_area css ========*/
+.cons_work_area {
+  display: flex;
+  flex-wrap: wrap;
+  .cons_work_left {
+    width: calc(50% + 85px);
+    display: flex;
+    align-items: center;
+    .cons_about_content {
+      max-width: 670px;
+      margin-left: auto;
+      margin-right: 0;
+      padding-right: 225px;
+    }
+  }
+  .cons_work_right {
+    width: calc(50% - 85px);
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.2);
+    img {
+      max-width: 100%;
+    }
+    .video_icon {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: rgba(242, 117, 7, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: #fff;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.2s linear;
+      left: -100px;
+      z-index: 1;
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        border-radius: 50%;
+        z-index: -1;
+      }
+      &:before {
+        width: 144px;
+        height: 144px;
+        background: rgba(242, 117, 7, 0.3);
+        transition: all 0.2s linear;
+      }
+      &:after {
+        left: 50%;
+        top: 50%;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: rgba(242, 117, 7, 0.7);
+        animation: scalePlus 3s infinite;
+        transform: translate(-50%, -50%);
+        animation-delay: 1.5s;
+        will-change: transform;
+      }
+      i {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: rgba(242, 117, 7, 1);
+        text-align: center;
+        line-height: 120px;
+        transition: all 0.2s linear;
+      }
+      &:hover {
+        i,
+        &:before {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+.progress-element {
+  margin-top: -15px;
+  p {
+    font-size: 16px;
+    font-weight: 600;
+    color: $h_color;
+    margin-bottom: 6px;
+    margin-top: 50px;
+  }
+  .progress {
+    height: 5px;
+    background: #ebe5e5;
+    border-radius: 0px;
+    overflow: visible;
+    .progress-bar {
+      position: relative;
+      background-image: linear-gradient(
+        90deg,
+        rgba(242, 117, 7, 0.99608) 0%,
+        rgb(242, 173, 7) 100%
+      );
+      left: 0;
+      width: 0;
+      transition: width 1.3s linear;
+      overflow: visible;
+      .count-tip {
+        color: #7e8288;
+        position: absolute;
+        right: 0;
+        font-weight: 500;
+        top: -20px;
+        font-size: 14px;
+        display: table;
+      }
+    }
+  }
+}
+/*============ cons_work_area css ========*/
+/*============ cons_video_area css ========*/
+.cons_video_area {
+  padding: 100px 0px;
+}
+/*============ cons_video_area css ========*/
+
+/*============ cons_work_area_two css ========*/
+.cons_work_area_two {
+  display: flex;
+  flex-wrap: wrap;
+  .cons_work_right .video_icon {
+    left: auto;
+    right: -100px;
+  }
+  .cons_work_left .cons_about_content {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 225px;
+    padding-right: 0;
+  }
+}
+/*============ cons_work_area_two css ========*/
+
+/*============ cons_achievment_area css ========*/
+.cons_achievment_area {
+  padding: 100px 0px;
+}
+.achievment_list {
+  margin-bottom: -90px;
+}
+.achievment_item {
+  margin-bottom: 88px;
+  .date {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 60px;
+    color: $h_color;
+  }
+  .media-body {
+    h5 {
+      font-size: 24px;
+      font-weight: 700;
+      color: $orange;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 36px;
+      color: #363d48;
+      margin-bottom: 0;
+      a {
+        color: $pcolor;
+        transition: color 0.2s linear;
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+/*============ cons_achievment_area css ========*/
+
+/*============ cons_features_area_one css ========*/
+.cons_features_area_one {
+  padding: 100px 0px;
+  .row {
+    margin-bottom: -90px;
+  }
+}
+.cons_features_item {
+  padding: 0px 30px;
+  margin-bottom: 90px;
+  img {
+    margin-bottom: 55px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+/*============ cons_features_area_one css ========*/
+
+/*============ cons_features_area_two css ========*/
+.cons_features_area_two {
+  padding: 40px 0px 100px;
+}
+/*============ cons_features_area_two css ========*/
+
+/*============ cons_features_area_three css ========*/
+.cons_features_area_three {
+  padding: 200px 0px 100px;
+}
+.cons_features_inner {
+  margin-left: -165px;
+  margin-right: -165px;
+  .custom_col {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+.cons_features_item_two {
+  background: #fafafa;
+  text-align: center;
+  padding: 100px 55px;
+  i {
+    font-size: 80px;
+    color: $orange;
+    margin-bottom: 45px;
+    display: block;
+  }
+  .page_head {
+    margin-bottom: 0;
+    transition: color 0.2s linear;
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+/*============ cons_features_area_three css ========*/

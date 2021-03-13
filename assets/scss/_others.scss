@@ -1,0 +1,966 @@
+.pad_btm {
+  padding-bottom: 200px;
+}
+
+/* Breadcrumb Area css
+============================================================================================ */
+.breadcrumb_area {
+  background: #f7f5f9;
+  padding: 68px 0px;
+  h4 {
+    color: $h_color;
+    margin-bottom: 0px;
+    font: 600 24px $mon;
+  }
+  .nav {
+    li {
+      a {
+        color: $pcolor;
+        font: 14px $mon;
+        position: relative;
+        &:after {
+          content: "\f101";
+          font-family: "Font Awesome 5 Free";
+          display: inline-block;
+          color: $pcolor;
+          margin: 0px 6px;
+          font-weight: 900;
+        }
+      }
+      &:last-child {
+        margin-right: 0px;
+        a {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+/* End Breadcrumb Area css
+============================================================================================ */
+
+/* About Us Area css
+============================================================================================ */
+.about_main_area {
+  padding-top: 190px;
+  .about_inner {
+    text-align: center;
+    max-width: 770px;
+    margin: auto;
+    .title_head {
+      margin-bottom: 40px;
+    }
+    p {
+      font: 400 18px/34px $mon;
+      margin-bottom: 30px;
+    }
+  }
+  .about_img {
+    border-radius: 2px;
+    background-color: rgb(168, 170, 173);
+    box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.2);
+    margin-top: 80px;
+    position: relative;
+    &:before {
+      content: "";
+      background: url(../img/about/about-texture.png) no-repeat;
+      height: 270px;
+      width: 300px;
+      position: absolute;
+      left: -130px;
+      top: -130px;
+      z-index: -1;
+    }
+  }
+}
+/* End About Us Area css
+============================================================================================ */
+
+/* Team Three Area css
+============================================================================================ */
+.team_three {
+  .team_inner {
+    position: relative;
+    overflow: hidden;
+  }
+  .team_name {
+    margin-top: 36px;
+    h6 {
+      color: $pcolor;
+      font: 500 12px $mon;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: $h_color;
+      font: 700 18px $mon;
+      margin-bottom: 0px;
+    }
+  }
+  &:hover {
+    box-shadow: none;
+  }
+}
+/* End Team Three Area css
+============================================================================================ */
+
+/* Work Offers Area css
+============================================================================================ */
+.work_offers {
+  padding-bottom: 40px;
+  .cons_contact_info_two {
+    color: #fff;
+    h4 {
+      color: #fff;
+      font: 700 36px $mon;
+      margin-bottom: 30px;
+    }
+    p {
+      font: 400 18px/34px $mon;
+      margin-bottom: 80px;
+    }
+    .theme_btn {
+      font-size: 18px;
+      padding: 13px 81px;
+    }
+  }
+}
+/* End Work Offers Area css
+============================================================================================ */
+
+/* Services Area css
+============================================================================================ */
+.services_area {
+  padding-bottom: 100px;
+  .services_inner {
+    margin-bottom: -60px;
+  }
+}
+.service_item {
+  padding: 70px;
+  opacity: 1;
+  box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.1);
+  @include transition;
+  background: #fff;
+  margin-bottom: 60px;
+  .service_icon {
+    font-size: 24px;
+    font-weight: 700;
+    color: $h_color;
+    line-height: 38px;
+    align-items: center;
+    margin-bottom: 40px;
+    i {
+      font-size: 55px;
+      color: $orange;
+      margin-right: 55px;
+    }
+  }
+  .theme_btn_two {
+    min-width: 220px;
+    margin-top: 44px;
+    &:after {
+      background: $orange;
+    }
+  }
+  &:hover {
+    background: $orange;
+    .service_icon i,
+    .service_icon,
+    p {
+      color: #fff;
+    }
+  }
+  &:hover {
+    background: url(../img/about/service-item-bg.jpg) no-repeat scroll center
+      center;
+    background-size: cover;
+    @include transition;
+  }
+}
+/* End Services Area css
+============================================================================================ */
+
+/* Services Details Area css
+============================================================================================ */
+.service_details_area {
+  padding-bottom: 100px;
+  .service_details_img {
+    margin-bottom: -30px;
+    img {
+      margin-bottom: 30px;
+    }
+  }
+}
+.service_details_text {
+  margin-top: 65px;
+  .left {
+    max-width: 560px;
+    h3 {
+      color: $h_color;
+      font: 700 36px $mon;
+      margin-bottom: 45px;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+    .nav {
+      margin-bottom: 45px;
+      li {
+        margin-bottom: 25px;
+        a {
+          font: 400 20px $mon;
+          color: $pcolor;
+          position: relative;
+          padding-left: 25px;
+          display: block;
+          @include transition;
+          i {
+            position: absolute;
+            left: 0px;
+            color: $orange;
+            top: 5px;
+            font-size: 14px;
+          }
+          &:hover {
+            color: $orange;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .theme_btn {
+      margin-top: 50px;
+      padding: 10px 33px;
+    }
+  }
+}
+.right_brochure {
+  h5 {
+    color: $h_color;
+    font: 700 18px $mon;
+    margin-bottom: 20px;
+  }
+  a {
+    display: block;
+    border: 2px solid #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    padding: 0px 25px 0px 30px;
+    color: $pcolor;
+    font: 400 15px/62px $mon;
+    i {
+      float: right;
+      line-height: 62px;
+    }
+  }
+  img {
+    margin-top: 10px;
+  }
+}
+/* End Services Details Area css
+============================================================================================ */
+
+/* Price Plan Area css
+============================================================================================ */
+.price_item {
+  border-radius: 2px;
+  box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.1);
+  padding: 56px 65px 65px 65px;
+  text-align: center;
+  @include transition;
+  cursor: pointer;
+  h5 {
+    color: $orange;
+    font: 600 60px $mon;
+    margin-bottom: 23px;
+    @include transition;
+    span {
+      font-size: 18px;
+    }
+    .dollar {
+      vertical-align: top;
+      position: relative;
+      top: 12px;
+    }
+  }
+  h3 {
+    font: 700 24px $mon;
+    color: $h_color;
+    margin-bottom: 45px;
+    @include transition;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 55px;
+    @include transition;
+  }
+  .theme_btn_two {
+    font-size: 16px;
+    padding: 11px 74px;
+    &:after {
+      background: #fff;
+    }
+    &:hover {
+      color: $orange;
+    }
+  }
+  &:hover {
+    background: $orange;
+    h5 {
+      color: #fff;
+    }
+    h3 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+/* End Price Plan Area css
+============================================================================================ */
+
+/* Testi Single Area css
+============================================================================================ */
+.testi_single_area {
+  padding-bottom: 100px;
+  .col-lg-6 {
+    align-self: center;
+  }
+}
+.ts_img {
+  border-radius: 2px;
+  background-color: rgb(168, 170, 173);
+  box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.2);
+}
+.ts_text {
+  padding-left: 100px;
+  i {
+    background: #fafafa;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    color: $orange;
+    margin-bottom: 50px;
+  }
+  h4 {
+    font: 400 30px/56px $mon;
+    color: $h_color;
+    margin-bottom: 50px;
+    strong {
+      font-weight: 600;
+    }
+  }
+  .media {
+    .d-flex {
+      padding-right: 25px;
+    }
+    .media-body {
+      align-self: center;
+      h5 {
+        color: $pcolor;
+        font: 700 18px $mon;
+      }
+    }
+  }
+}
+/* End Testi Single Area css
+============================================================================================ */
+
+/* Projects Area css
+============================================================================================ */
+.projects_area {
+  padding-bottom: 35px;
+  .portfolio_filter {
+    margin-bottom: 95px;
+  }
+  .projects_inner {
+    margin-bottom: -30px;
+  }
+}
+
+.project_item {
+  margin-bottom: 30px;
+  &:before {
+    background: rgba($orange, 0.95);
+    opacity: 0;
+    @include transition;
+  }
+  h4 {
+    margin-bottom: 45px;
+  }
+  .theme_btn_two {
+    opacity: 0;
+    margin-top: 8px;
+    padding: 8px 37px;
+  }
+  &:hover {
+    .hover-content {
+      bottom: 65px;
+    }
+    &:before {
+      opacity: 1;
+    }
+    .theme_btn_two {
+      opacity: 1;
+    }
+  }
+}
+
+.pagination_area {
+  text-align: center;
+  margin-top: 95px;
+  nav {
+    .pagination {
+      justify-content: center;
+      li {
+        margin-right: 3px;
+        a {
+          padding: 0px;
+          font: 500 14px/48px $mon;
+          color: $pcolor;
+          height: 48px;
+          width: 48px;
+          border-radius: 50%;
+          border: 1px solid transparent;
+        }
+        &.active {
+          a {
+            border-color: #f3e4c8;
+            background: transparent;
+            color: $pcolor;
+          }
+        }
+        &:nth-child(5) {
+          a {
+            color: $h_color;
+            text-decoration: underline;
+          }
+        }
+        &:first-child {
+          margin-right: 70px;
+        }
+        &:last-child {
+          margin-left: 70px;
+          margin-right: 0px;
+        }
+        &:hover {
+          a {
+            background: transparent;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.project_details_area {
+  padding-bottom: 50px;
+  .project_details_img {
+    img {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .single_pagination {
+    margin-top: 60px !important;
+    max-width: 670px;
+    .theme_btn_two {
+      font-size: 16px;
+      padding: 10px 82px;
+    }
+    .left {
+      .theme_btn_two {
+        i {
+          margin-right: 6px;
+          margin-left: 0px;
+        }
+      }
+    }
+    .right {
+      .theme_btn_two {
+        i {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}
+.project_details_text {
+  margin-top: 35px;
+  h4 {
+    font: 700 36px/56px $mon;
+    margin-bottom: 40px;
+  }
+  p {
+    margin-bottom: 35px;
+    & + p {
+      margin-bottom: 0px;
+    }
+  }
+  .nav {
+    margin-top: 75px;
+  }
+}
+.share_icon {
+  li {
+    margin-left: 20px;
+    color: $h_color;
+    font: 700 18px $mon;
+    align-self: center;
+    a {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      text-align: center;
+      background: #f2e1c2;
+      display: inline-block;
+      line-height: 42px;
+      color: $orange;
+      @include transition;
+      &:hover {
+        color: #fff;
+        background: $orange;
+      }
+    }
+    &:first-child {
+      margin-left: 0px;
+      margin-right: 10px;
+    }
+  }
+}
+.p_details_info {
+  margin-top: 80px;
+  .info_item {
+    margin-bottom: 45px;
+    h5 {
+      font: 700 18px $mon;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+/* End Projects Area css
+============================================================================================ */
+
+/* Blog List Area css
+============================================================================================ */
+.blog_list_area {
+  .pagination_area {
+    margin-top: 100px;
+    margin-bottom: 45px;
+    .pagination {
+      margin-bottom: 0px;
+    }
+  }
+}
+.blog_l_item {
+  margin-bottom: 70px;
+  .col-lg-6 {
+    align-self: center;
+  }
+  .blog_l_img {
+    margin-right: -15px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .blog_l_text {
+    padding-left: 55px;
+    h6 {
+      font: 600 14px $mon;
+      text-transform: uppercase;
+      color: $pcolor;
+      letter-spacing: 2.1px;
+      margin-bottom: 20px;
+    }
+    h4 {
+      color: $h_color;
+      font: 700 36px/56px $mon;
+      margin-bottom: 40px;
+      @include transition;
+      &:hover {
+        color: $orange;
+      }
+    }
+    p {
+      margin-bottom: 50px;
+    }
+  }
+}
+/* End Blog List Area css
+============================================================================================ */
+
+/* Blog Details Area css
+============================================================================================ */
+.blog_d_top_text {
+  max-width: 770px;
+  margin: auto;
+  text-align: center;
+  h3 {
+    color: $h_color;
+    font: 700 60px $mon;
+    margin-bottom: 45px;
+  }
+  .nav {
+    justify-content: center;
+    margin-bottom: 45px;
+    li {
+      margin-right: 50px;
+      a {
+        font: 600 14px $mon;
+        text-transform: uppercase;
+        color: #a8aaad;
+        letter-spacing: 2.1px;
+        position: relative;
+        &:before {
+          content: "";
+          background: #eeeeee;
+          height: 14px;
+          width: 2px;
+          position: absolute;
+          right: -25px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        span {
+          color: #7e8288;
+        }
+      }
+      &:last-child {
+        margin-right: 0px;
+        a {
+          &:before {
+            display: none;
+          }
+          span {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+  p {
+    margin-bottom: 55px;
+  }
+}
+.blog_d_bottom_text {
+  max-width: 770px;
+  margin: auto;
+  margin-top: 55px;
+  h4 {
+    color: $h_color;
+    font: 700 24px $mon;
+    margin-bottom: 40px;
+  }
+  p {
+    margin-bottom: 35px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  .blockquote {
+    font: 300 30px/56px $mon;
+    color: $h_color;
+    font-style: italic;
+    padding-left: 95px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+}
+.simple_single {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .col-lg-5 {
+    align-self: center;
+  }
+  .simple_text {
+    padding-left: 65px;
+    h4 {
+      color: $h_color;
+      font: 700 24px $mon;
+      margin-bottom: 40px;
+    }
+    p {
+      a {
+        color: $orange;
+      }
+    }
+  }
+}
+.conclusion_text {
+  max-width: 770px;
+  margin: auto;
+  h4 {
+    color: $h_color;
+    font: 700 24px $mon;
+    margin-bottom: 50px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+  .share_icon {
+    margin-top: 50px;
+  }
+}
+.like_post {
+  h2 {
+    max-width: 770px;
+    margin: auto;
+    font-size: 36px;
+    color: $h_color;
+    font-weight: bold;
+    margin-bottom: 80px;
+    margin-top: 180px;
+  }
+  .cons_blog_item {
+    h3 {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+.cm_title_br {
+  font: 700 36px $mon;
+  margin-bottom: 75px;
+}
+.s_comment_list {
+  max-width: 770px;
+  margin: auto;
+  .s_comment_list_inner {
+    .media {
+      margin-top: 35px;
+      .d-flex {
+        padding-right: 35px;
+      }
+      .media-body {
+        border-bottom: 1px solid #f7f5f9;
+        padding-bottom: 35px;
+        h4 {
+          font: 700 18px $mon;
+          margin-bottom: 0px;
+        }
+        .time {
+          color: $pcolor;
+          font: 500 14px $mon;
+          margin-bottom: 25px;
+          display: inline-block;
+        }
+        p {
+          margin-bottom: 20px;
+        }
+        .more_btn {
+          i {
+            margin-left: 0px;
+          }
+        }
+        .media {
+          padding-top: 35px;
+          border-top: 1px solid #f7f5f9;
+          .media-body {
+            border-bottom: 0px;
+            padding-bottom: 0px;
+          }
+        }
+      }
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+.s_comment_area {
+  max-width: 770px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.contact_us_form {
+  .form-group {
+    margin-bottom: 30px;
+    input {
+      border: 2px solid #e5e5e6;
+      height: 60px;
+      padding: 0px 25px;
+      border-radius: 3px;
+      line-height: 60px;
+      outline: none;
+      box-shadow: none;
+      font: 400 15px/60px $mon;
+      color: $pcolor;
+      transition: all 0.1s linear;
+      @include placeholder {
+        font: 400 15px/60px $mon;
+        color: $pcolor;
+      }
+      &:focus {
+        border-color: $orange;
+      }
+    }
+    textarea {
+      border: 2px solid #e5e5e6;
+      height: 100px;
+      padding: 0px 25px;
+      border-radius: 3px;
+      outline: none;
+      box-shadow: none;
+      font: 400 15px/50px $mon;
+      color: $pcolor;
+      @include placeholder {
+        font: 400 15px/50px $mon;
+        color: $pcolor;
+      }
+      &:focus {
+        border-color: $orange;
+      }
+    }
+    .theme_btn_three {
+      width: 270px;
+      background: $orange;
+      color: #fff;
+      height: 65px;
+      font: 600 18px $mon;
+      border: none;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+/* End Blog Details Area css
+============================================================================================ */
+
+/* Map Area css
+============================================================================================ */
+.map_area {
+  margin-top: 180px;
+}
+/* End Map Area css
+============================================================================================ */
+
+/* Team Area css
+============================================================================================ */
+.our_founder_area {
+  .row {
+    margin-bottom: -100px;
+  }
+}
+.our_f_item {
+  margin-bottom: 100px;
+  .team_name {
+    text-align: center;
+    margin-top: 30px;
+    h6 {
+      font: 500 12px $mon;
+      text-transform: uppercase;
+      color: $pcolor;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font: 700 18px $mon;
+      margin-bottom: 30px;
+    }
+    .nav {
+      justify-content: center;
+      li {
+        margin-right: 20px;
+        a {
+          height: 40px;
+          width: 40px;
+          border: 1px solid #f2e2c4;
+          text-align: center;
+          line-height: 40px;
+          display: inline-block;
+          border-radius: 50%;
+          color: $orange;
+          @include transition;
+          &:hover {
+            background: $orange;
+            color: #fff;
+          }
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
+/* End Team Area css
+============================================================================================ */
+
+/* Team Details Area css
+============================================================================================ */
+.team_details_area {
+  .col-lg-5 {
+    align-self: center;
+  }
+  .team_d_text {
+    h4 {
+      font: 700 36px $mon;
+      margin-bottom: 12px;
+    }
+    h6 {
+      font: 500 18px $mon;
+      color: $orange;
+      margin-bottom: 45px;
+    }
+    p {
+      margin-bottom: 45px;
+    }
+    .theme_btn {
+      background: $orange;
+      color: #fff;
+      height: 65px;
+      width: 270px;
+      display: inline-block;
+      text-align: center;
+      padding: 0px;
+      font: 600 18px/65px $mon;
+      &:after {
+        background: #222;
+      }
+    }
+  }
+}
+.team_list {
+  margin-top: 50px;
+  margin-bottom: 35px;
+  li {
+    font: 700 18px $mon;
+    color: $h_color;
+    margin-bottom: 28px;
+    a {
+      color: $pcolor;
+      font: 400 18px $mon;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+.feature_skill_area {
+  margin-top: 90px;
+  margin-bottom: 140px;
+  .section_title_one {
+    margin-bottom: 65px;
+  }
+}
+/* End Team Details Area css
+============================================================================================ */

@@ -1,0 +1,829 @@
+/*============= cons_service_area ============*/
+.cons_service_area {
+  padding-bottom: 100px;
+}
+.service_tab {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 40px 0px rgba(30, 34, 40, 0.05);
+  margin-bottom: 170px;
+  ul {
+    max-width: 1170px;
+    margin: 0 auto;
+    border: 0px;
+    .nav-item {
+      width: calc(100% / 3);
+      margin-bottom: 0;
+      .nav-link {
+        font-size: 16px;
+        font-weight: 600;
+        color: $pcolor;
+        border: 0px;
+        border-radius: 0px;
+        text-align: center;
+        position: relative;
+        padding: 43px 20px;
+        background: transparent;
+        &:before {
+          content: "";
+          width: 0;
+          height: 3px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: auto;
+          background: $orange;
+          transition: width 0.5s linear;
+        }
+        &:hover,
+        &.active {
+          color: $h_color;
+          &:before {
+            width: 100%;
+            right: auto;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.service_teb_item {
+  .cons_about_content {
+    padding-left: 70px;
+  }
+  &.flex-row-reverse {
+    .cons_about_content {
+      padding-left: 0px;
+      padding-right: 70px;
+    }
+  }
+  & + .service_teb_item {
+    margin-top: 200px;
+  }
+}
+.service_img {
+  border-radius: 2px;
+  box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.2);
+  overflow: hidden;
+}
+/*============= cons_service_area ============*/
+
+/*============= cons service_area_two ============*/
+.cons_service_area_two {
+  padding: 100px 0px;
+  .service_tab {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 3px solid #f7f5f9;
+    margin-bottom: 100px;
+    ul {
+      max-width: inherit;
+      .nav-item {
+        .nav-link {
+          &:before {
+            bottom: -3px;
+          }
+          h2 {
+            font-size: 140px;
+            font-weight: 700;
+            background-image: url("../img/home-three/service1.jpg");
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-position: 61%;
+            background-size: contain;
+          }
+        }
+        &:nth-child(2) {
+          .nav-link {
+            h2 {
+              background-image: url("../img/home-three/service3.jpg");
+            }
+          }
+        }
+        &:nth-child(3) {
+          .nav-link {
+            h2 {
+              background-image: url("../img/home-three/service2.jpg");
+            }
+          }
+        }
+      }
+    }
+  }
+  .service_img {
+    box-shadow: none;
+  }
+}
+/*============= cons service_area_two ============*/
+
+/*============= cons_service_quality_area ============*/
+.cons_service_quality_area {
+  padding-bottom: 100px;
+}
+.cons_service_quality_item {
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.1);
+  padding: 60px 55px 50px;
+  margin-top: -148px;
+  i {
+    font-size: 80px;
+    color: $orange;
+    margin-bottom: 30px;
+    display: block;
+  }
+  h4 {
+    color: $h_color;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    transition: color 0.2s linear;
+    &:hover {
+      color: $orange;
+    }
+  }
+  p {
+    font-size: 18px;
+    line-height: 34px;
+    color: $pcolor;
+    margin-bottom: 0;
+  }
+}
+/*============= cons_service_quality_area ============*/
+
+/*============= cons_accordian_area ============*/
+.cons_accordian_area {
+  padding: 100px 0px;
+}
+.cons_accordian_info {
+  padding-left: 100px;
+}
+.cons_accordian {
+  .card {
+    border: 0px;
+    border-radius: 2px !important;
+    box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.1);
+    padding: 40px;
+    .card-header {
+      padding: 0px;
+      margin-bottom: 0;
+      background: transparent;
+      border: 0px;
+      button {
+        box-shadow: none;
+        padding: 10px 0px 10px 90px;
+        font-size: 18px;
+        font-weight: 700;
+        color: $h_color;
+        text-decoration: none;
+        position: relative;
+        .icon {
+          width: 50px;
+          height: 50px;
+          line-height: 52px;
+          border-radius: 50%;
+          background: $orange;
+          color: #fff;
+          text-align: center;
+          display: inline-block;
+          position: absolute;
+          transition: all 0.2s linear;
+          left: 0;
+          top: 0px;
+          i {
+            transform: rotate(90deg);
+            transition: all 0.4s linear;
+          }
+        }
+        &.collapsed {
+          .icon {
+            background: #f2e1c2;
+            color: $orange;
+            i {
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+    }
+    .card-body {
+      padding-left: 90px;
+      padding-top: 8px;
+      padding-bottom: 0;
+    }
+    & + .card {
+      margin-top: 30px;
+    }
+  }
+}
+/*============= cons_accordian_area ============*/
+
+/*============= cons_work_process_area ============*/
+.cons_work_process_area {
+  padding: 150px 0px 100px;
+}
+.work_process_item {
+  position: relative;
+  padding: 0px 30px;
+  i {
+    font-size: 90px;
+    color: $orange;
+  }
+  .arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #f2e1c2;
+    border-radius: 50%;
+    line-height: 50px;
+    color: $orange;
+    right: -40px;
+    top: 25px;
+    text-align: center;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 170px;
+      height: 3px;
+      background-image: linear-gradient(
+        90deg,
+        rgb(251, 251, 251) 0%,
+        rgb(242, 225, 194) 25%,
+        rgb(242, 225, 194) 50%,
+        rgb(249, 240, 225) 74%,
+        rgb(255, 255, 255) 100%
+      );
+      left: -58px;
+      top: 23px;
+      z-index: -1;
+    }
+    i {
+      font-size: 18px;
+    }
+    &.last {
+      display: none;
+    }
+  }
+  .img {
+    box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.2);
+    border-radius: 2px;
+    display: inline-block;
+    overflow: hidden;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 45px;
+    margin-bottom: 27px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+/*============= cons_work_process_area ============*/
+/*============= cons_work_process_area_two ============*/
+.cons_work_process_area_three {
+  padding: 100px 0px;
+  .work_process_item {
+    width: 23%;
+    padding: 0px;
+    margin-right: 15%;
+    .arrow {
+      right: -44%;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+/*============= cons_work_process_area_two ============*/
+
+/*============= cons_offer_service_area ============*/
+.cons_offer_service_area {
+  padding: 120px 0px 60px;
+  .offer_service_item {
+    &:before {
+      background: #1e2228;
+      opacity: 0.5;
+      transition: all 0.3s linear;
+    }
+    .hover-content {
+      .icon {
+        font-size: 74px;
+        color: #fff;
+        margin-bottom: 40px;
+        display: inline-block;
+        transition: color 0.2s linear;
+      }
+    }
+    &:hover {
+      &:before {
+        opacity: 0.9;
+        background: $orange;
+      }
+      .icon {
+        color: #ffb500;
+      }
+    }
+  }
+}
+
+/*============= cons_offer_service_area ============*/
+
+/*============= cons_service_area_six ============*/
+.cons_service_area_six {
+  padding: 100px 0px;
+  .col-md-6 {
+    margin-bottom: 30px;
+  }
+  .cons_service_quality_item {
+    margin-top: 0;
+    padding: 68px 55px 65px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    .shap {
+      position: absolute;
+      right: -173px;
+      top: -145px;
+      font-size: 280px;
+      color: #f7f5f9;
+      margin-bottom: 0;
+    }
+    &:hover {
+      background: #fff;
+      box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.2);
+    }
+  }
+  .full_btn {
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+/*============= cons_service_area_six ============*/
+
+/*============= cons_build_area ============*/
+.cons_build_area {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 130px 0px 63px;
+  .cons_build_left {
+    border-radius: 2px;
+    box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.2);
+    width: calc(50% - 15px);
+    overflow: hidden;
+    img {
+      max-width: 100%;
+    }
+  }
+  .cons_build_right {
+    width: calc(50% + 15px);
+    display: flex;
+    align-items: center;
+  }
+  .cons_about_content {
+    max-width: 600px;
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 130px;
+  }
+}
+/*============= cons_build_area ============*/
+
+/*============= cons_offer_service_area_two ============*/
+.cons_offer_service_area_two {
+  .offer_service_item {
+    background: #fafafa;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    border-radius: 2px;
+    &:before {
+      opacity: 0;
+    }
+    .hover-content {
+      position: relative;
+      bottom: -76px;
+      .icon {
+        color: $orange;
+      }
+      h4 {
+        color: $h_color;
+      }
+      .text_btn {
+        margin-top: 18px;
+        opacity: 0;
+        transition: opacity 0.3s linear;
+      }
+    }
+    &:hover {
+      .hover-content {
+        bottom: -10px;
+        .icon {
+          color: #ffb500;
+        }
+        h4 {
+          color: #fff;
+        }
+        .text_btn {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+/*============= cons_offer_service_area_two ============*/
+/*============= cons_offer_service_area_three ============*/
+.cons_offer_service_area_three {
+  .offer_service_item {
+    padding: 120px 40px 50px;
+    max-height: 472px;
+    .hover-content {
+      padding-left: 0;
+      bottom: 0;
+      overflow: hidden;
+      h4 {
+        margin-bottom: 15px;
+      }
+      .theme_btn_two {
+        transform: translateY(100%);
+        &:after {
+          background: $h_color;
+        }
+      }
+    }
+    &:hover {
+      padding-bottom: 70px;
+      .hover-content {
+        bottom: 0px;
+        margin-top: -140px;
+        p {
+          color: #fff;
+        }
+        i {
+          font-size: 150px;
+        }
+        .theme_btn_two {
+          transform: translateY(0);
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+}
+
+.cons_offer_service_area_four {
+  padding: 0px;
+  margin-top: -140px;
+  .offer_service_item {
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 45px 150px 0px rgba(30, 34, 40, 0.1);
+    &:before {
+      display: none;
+    }
+    .hover-content {
+      bottom: -64px;
+    }
+    &:hover {
+      .hover-content {
+        h4 {
+          color: $h_color;
+        }
+        .icon,
+        .text_btn {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+/*============= cons_offer_service_area_three ============*/
+/*============= cons_service_area_three ============*/
+.cons_service_area_three {
+  display: flex;
+  flex-wrap: wrap;
+  .section_title_one {
+    padding-left: 12px;
+    margin-bottom: 25px;
+  }
+  .cons_service_slider {
+    margin-top: -70px;
+    .item {
+      .testimonial_content {
+        padding: 70px;
+        opacity: 1;
+        box-shadow: 0px 10px 40px 0px rgba(30, 34, 40, 0.08);
+        transition: all 0.3s linear;
+        .service_icon {
+          font-size: 24px;
+          font-weight: 700;
+          color: $h_color;
+          line-height: 38px;
+          align-items: center;
+          margin-bottom: 40px;
+          i {
+            font-size: 55px;
+            color: $orange;
+            margin-right: 55px;
+          }
+        }
+        .theme_btn_two {
+          min-width: 220px;
+          margin-top: 44px;
+          &:after {
+            background: $h_color;
+          }
+        }
+        &:hover {
+          background: $orange;
+          .service_icon i,
+          .service_icon,
+          p {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .cons_service_slider_two {
+    .item {
+      padding-right: 30px;
+    }
+    .cons_service_item {
+      border-radius: 2px;
+      box-shadow: 0px 15px 100px 0px rgba(30, 34, 40, 0.1);
+      padding: 70px 70px 50px;
+      img {
+        margin-bottom: 45px;
+      }
+      .page_head {
+        margin-bottom: 28px;
+      }
+    }
+  }
+  .slick-arrow {
+    display: none !important;
+  }
+}
+
+/*============= cons_service_area_three ============*/
+
+/*============= cons_work_process_area_two ============*/
+.cons_work_process_area_two {
+  padding: 100px 0px;
+}
+/*============= cons_work_process_area_two ============*/
+
+/*============= cons_services_area_four ============*/
+.cons_services_area_four {
+  padding: 100px 0px;
+  .container {
+    position: relative;
+  }
+  .project_title {
+    margin-bottom: -40px;
+  }
+}
+.service_step_item {
+  padding-bottom: 170px;
+  position: relative;
+  .number_circle {
+    position: relative;
+    right: auto;
+    top: 90px;
+    transform: translateY(0);
+    margin: 0 auto;
+    background: rgba(54, 61, 72, 0.2);
+    color: $orange;
+    &:before {
+      background: rgba(54, 61, 72, 0.3);
+    }
+    &:after {
+      background: rgba(54, 61, 72, 0.7);
+    }
+    span {
+      background: rgba(54, 61, 72, 1);
+    }
+  }
+  .cons_about_content {
+    text-align: left;
+  }
+  &.flex-row-reverse {
+    .cons_about_content {
+      text-align: right;
+    }
+  }
+  .line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-right: 3px solid #f1e0c1;
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+/*============= cons_services_area_four ============*/
+/*============= cons_choose_area ============*/
+.cons_choose_area {
+  .section_title_one {
+    padding-left: 390px;
+    margin-bottom: -40px;
+  }
+}
+.cons_choose_info {
+  padding-top: 60px;
+}
+.cons_choose_item {
+  margin-top: 120px;
+  i {
+    font-size: 72px;
+    color: $orange;
+    display: block;
+    margin-bottom: 44px;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 24px;
+    transition: color 0.2s linear;
+    &:hover {
+      color: $orange;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+.choose_img {
+  position: relative;
+  .section_title_one {
+    position: absolute;
+    right: 70px;
+    top: 0;
+  }
+}
+/*============= cons_choose_area ============*/
+
+/*============= cons_how_work_area_two ============*/
+.cons_how_work_area_two {
+  position: relative;
+  z-index: 1;
+  .pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  p {
+    margin-top: 30px;
+  }
+  .play_btn {
+    .icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      border: 2px solid $orange;
+      color: $orange;
+      line-height: 120px;
+      display: block;
+      margin: 90px auto 40px;
+      transition: all 0.2s linear;
+      &:hover {
+        background: $orange;
+        color: #fff;
+      }
+    }
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      color: $orange;
+    }
+  }
+}
+/*============= cons_how_work_area_two ============*/
+/*============= cons_shop_service_area ============*/
+.cons_shop_service_area {
+  padding: 200px 0px 100px;
+}
+.cons_service_item {
+  padding-right: 80px;
+  cursor: pointer;
+  i {
+    font-size: 72px;
+    color: #e1e1e1;
+    margin-bottom: 35px;
+    display: inline-block;
+    transition: color 0.2s linear;
+  }
+  h4 {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  &:hover {
+    i {
+      color: $orange;
+    }
+  }
+}
+/*============= cons_shop_service_area ============*/
+
+/*============= cons_service_area_five ============*/
+.cons_service_area_five {
+  .cons_custom_right {
+    position: relative;
+  }
+  .cons_service_slider {
+    .item {
+      .testimonial_content {
+        opacity: 0.3;
+        cursor: pointer;
+        i {
+          font-size: 60px;
+          color: $orange;
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 35px;
+          margin-bottom: 20px;
+          margin-top: 30px;
+        }
+        .text_btn {
+          color: $orange;
+          margin-top: 20px;
+          i {
+            font-size: 12px;
+            margin-left: 5px;
+            transition: all 0.2s linear;
+            opacity: 0;
+          }
+          &:before {
+            display: none;
+          }
+          &:hover {
+            i {
+              margin-left: 12px;
+            }
+          }
+        }
+        &:hover {
+          opacity: 1;
+          i {
+            color: #ffb500;
+          }
+          h3 {
+            color: #fff;
+          }
+          .text_btn {
+            color: #fff;
+            i {
+              color: #fff;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .slick-arrow {
+    display: block !important;
+    &.slick-prev {
+      display: none !important;
+    }
+    &.arrow_next {
+      position: absolute;
+      right: 235px;
+      top: 165px;
+      width: 60px;
+      height: 60px;
+      background: transparent;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 50%;
+      color: $h_color;
+      border: 2px solid $orange;
+      &:hover {
+        background: $orange;
+        color: #fff;
+      }
+    }
+  }
+}
+/*============= cons_service_area_five ============*/

@@ -1,0 +1,83 @@
+.dark_bg {
+  background: $h_color;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .text_btn,
+  .testimonail_author,
+  .footer_bottom .copy_text a,
+  .service_tab ul .nav-item .nav-link:hover,
+  .service_tab ul .nav-item .nav-link.active,
+  .cons_accordian .card .card-header button,
+  .cons_action_info_white .text {
+    color: #fff;
+  }
+  .cons_project_slider:before,
+  .cons_project_slider_six:before {
+    background: $h_color;
+  }
+  .cons_testimonial_slider .item .testimonial_content {
+    background: $orange;
+  }
+  .title_top,
+  .fact_item h3 {
+    color: $orange;
+  }
+  .cons_offer_service_area_four .offer_service_item {
+    background: #21252c;
+    .hover-content {
+      h4 {
+        color: #fff;
+      }
+    }
+  }
+  .footer_bottom.border_top {
+    border-top-color: #363d48;
+  }
+  .f_subscribe .form-control {
+    border-color: #363d48;
+  }
+  .service_tab,
+  .cons_service_quality_item,
+  .cons_action_info_white,
+  .twitter_info {
+    background: #21252c;
+  }
+  .cons_contact_info .theme_btn_three,
+  .cons_about_content .theme_btn,
+  .cons_action_info_three .theme_btn_three {
+    &:after {
+      background: #fff;
+    }
+    &:hover {
+      color: $orange;
+    }
+  }
+  .cons_service_area_two .service_tab {
+    border-color: #363d48;
+  }
+  .cons_testimonial_slider.testimonial_round .item .testimonial_content,
+  .cons_accordian .card {
+    background: #21252c;
+  }
+  .main_slider_area .slider-progress {
+    background: $h_color;
+  }
+  .work_process_item .arrow {
+    z-index: 1;
+    &:before {
+      background-image: linear-gradient(
+        90deg,
+        #1e2228 0%,
+        #f2e1c2 25%,
+        #f2e1c2 50%,
+        #f9f0e1 74%,
+        #1e2228 100%
+      );
+      // linear-gradient(90deg, #1e2228 0%, #f2e1c2 25%, #f2e1c2 50%, #f9f0e1 74%, #1e2228 100%)
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.text_btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: $h_color;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  &:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    color: $orange;
+    overflow: hidden;
+    z-index: 0;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    white-space: nowrap;
+  }
+  &:hover {
+    color: $orange;
+    transition: color 1s linear;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.theme_btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #1e2228;
+  border-radius: 3px;
+  padding: 10px 48px;
+  text-align: center;
+}
+
+.theme_btn_two {
+  background: #f2e1c2;
+  font-size: 14px;
+  font-weight: 600;
+  color: $orange;
+  padding: 8px 61px;
+  border-radius: 3px;
+  color: $orange;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.hover_style1 {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &:after {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.5s linear;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: transform;
+    z-index: -1;
+    background: $orange;
+  }
+  i {
+    margin-left: 15px;
+  }
+  &:hover {
+    color: #fff;
+    &:after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}
+
+.theme_btn_three {
+  background: $orange;
+  padding: 10px 56px;
+  &:after {
+    background: $h_color;
+  }
+}
+
+.theme_btn_white {
+  &:after {
+    background: #fff;
+  }
+  &:hover {
+    color: $orange;
+  }
+}
+
+.more_btn {
+  color: $orange;
+  font: 600 14px $mon;
+  i {
+    margin-left: 15px;
+    @include transition;
+  }
+  &:hover {
+    color: $orange;
+    i {
+      margin-left: 10px;
+    }
+  }
+}
+
+.yellow_btn {
+  background: #fe8a00;
+}
+.text_btn_two {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  &:hover {
+    color: $orange;
+  }
+}

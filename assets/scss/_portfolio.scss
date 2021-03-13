@@ -1,0 +1,925 @@
+/*=========== cons_projects_area css ===========*/
+.cons_projects_area {
+  padding: 200px 0px 70px;
+  .theme_btn_two {
+    margin-top: 100px;
+  }
+  .custom_arrow {
+    text-align: right;
+    position: absolute;
+    width: auto;
+    bottom: 70px;
+    right: 70px;
+    z-index: 1;
+  }
+}
+.cons_project_slider,
+.cons_project_slider_six {
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+  }
+  .slick-list {
+    overflow: visible;
+  }
+}
+.pr_slider_item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(30, 34, 40, 0.7) 0,
+      rgba(30, 34, 40, 0.1) 100%
+    );
+  }
+  img {
+    max-width: 100%;
+    transition: all 0.3s linear;
+    position: relative;
+    z-index: -1;
+  }
+  .hover-content {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    padding-left: 70px;
+    transition: all 0.3s linear;
+    h6 {
+      font-size: 14px;
+      letter-spacing: 2.1px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    h4 {
+      font-size: 24px;
+      line-height: 38px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .text_btn {
+      color: #fff;
+      font-size: 14px;
+      margin-top: 42px;
+      &:before {
+        display: none;
+      }
+      i {
+        margin-left: 10px;
+        font-size: 10px;
+        transition: all 0.2s linear;
+      }
+      &:hover {
+        i {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.03);
+    }
+    .hover-content {
+      bottom: 45px;
+    }
+    .text_btn {
+      margin-bottom: 0;
+    }
+  }
+}
+.cons_project_info {
+  position: relative;
+}
+.custom_arrow {
+  .slick-arrow {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+    color: $orange;
+    background: #f2e1c2;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 5px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    &.border_color {
+      border: 1px solid #f2e1c2;
+      background: transparent;
+      color: rgb(242, 225, 194);
+    }
+    &:hover {
+      background: $orange;
+      color: #fff;
+    }
+  }
+}
+/*=========== cons_projects_area css ===========*/
+
+/*=========== cons_projects_area two css ===========*/
+.cons_projects_area_two {
+  padding-top: 100px;
+  .custom_arrow {
+    .custom_prev,
+    .custom_next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 1px solid $orange;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        transform: scale(0.9);
+        z-index: -1;
+        opacity: 0;
+        transition: transform 0.3s, opacity 0.2s;
+      }
+      &:hover {
+        &::before {
+          transform: scale(1.3);
+          opacity: 1;
+        }
+      }
+    }
+    .custom_prev {
+      left: 333px;
+    }
+    .custom_next {
+      right: 333px;
+    }
+  }
+}
+.cons_project_slider_two {
+  &:before {
+    display: none;
+  }
+  .col-lg-12 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+/*=========== cons_projects_area two css ===========*/
+
+/*=========== cons_projects_area_three css ===========*/
+.cons_projects_area_three {
+  padding: 100px 0px 200px;
+  .theme_btn_two {
+    margin-top: 100px;
+  }
+}
+.cons_project_slider_three {
+  padding-top: 90px;
+  margin-left: -122px;
+  margin-right: -122px;
+  .item {
+    padding: 1.5px;
+  }
+  .pr_slider_item {
+    border-radius: 2px;
+    overflow: hidden;
+    &:before {
+      background: linear-gradient(
+        0deg,
+        rgba(30, 34, 40, 0.7) 0,
+        rgba(30, 34, 40, 0.1) 100%
+      );
+    }
+    .hover-content {
+      padding-left: 50px;
+      .text_btn {
+        i {
+          transform: rotate(45deg);
+          padding-right: 4px;
+        }
+      }
+    }
+  }
+}
+/*=========== cons_projects_area_three css ===========*/
+
+/*=========== portfolio_area css ===========*/
+.portfolio_area {
+  padding: 100px 0px;
+}
+.portfolio_gallery {
+  margin-left: -35px;
+  margin-right: -35px;
+  .custom_col_1 {
+    width: 46%;
+    height: 400px;
+  }
+  .custom_col_2 {
+    width: 54%;
+    height: 400px;
+  }
+  .portfolio_col {
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 70px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+.portfolio_filter {
+  .portfolio_filter_item {
+    font-weight: 600;
+    font-size: 16px;
+    color: $pcolor;
+    display: inline-flex;
+    margin-right: 50px;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover,
+    &.active {
+      color: $orange;
+    }
+  }
+}
+.portfolio_item {
+  position: relative;
+  height: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  img {
+    display: none;
+  }
+  .hover_content {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 50px;
+    padding-bottom: 38px;
+    padding-right: 20px;
+    background: linear-gradient(
+      0deg,
+      rgba(30, 34, 40, 0.7) 0,
+      rgba(30, 34, 40, 0.1) 100%
+    );
+    .title_top {
+      display: block;
+      color: #fff;
+      margin-bottom: 28px;
+    }
+    h5 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 38px;
+      color: #fff;
+    }
+  }
+}
+.portfolio_gallery_two {
+  margin-top: -70px;
+  margin-bottom: 100px;
+  .portfolio_col {
+    height: 450px;
+    .portfolio_item {
+      .hover_content {
+        background: linear-gradient(
+          0deg,
+          rgba(30, 34, 40, 0.6) 0,
+          rgba(30, 34, 40, 0.01) 100%
+        );
+      }
+    }
+  }
+}
+/*=========== portfolio_area css ===========*/
+
+/*=========== cons_projects_gallery_area css ===========*/
+.cons_projects_gallery_area {
+  padding: 100px 0px;
+  .theme_btn_two {
+    margin-top: 70px;
+  }
+}
+.gallery_item {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  .img_hover {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        0deg,
+        rgba(30, 34, 40, 0.7) 10%,
+        rgba(30, 34, 40, 0.01) 100%
+      );
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s linear;
+    }
+    img {
+      position: relative;
+      z-index: 0;
+      transition: all 0.5s linear;
+    }
+  }
+  .hover_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 50px 30px;
+    z-index: 2;
+    .tag,
+    h3 {
+      color: #fff;
+    }
+    .tag {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2.1px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      overflow: hidden;
+      span {
+        transform: translateY(100%);
+        display: block;
+        transition: all 0.3s linear;
+      }
+    }
+    a {
+      display: block;
+      overflow: hidden;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 38px;
+      font-weight: 700;
+      transform: translateY(100%);
+      transition: all 0.4s linear;
+    }
+  }
+  &:hover {
+    .img_hover {
+      img {
+        transform: scale(1.03);
+      }
+      &::before {
+        opacity: 1;
+      }
+    }
+    .hover_content {
+      .tag span,
+      h3 {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+/*=========== cons_projects_gallery_area css ===========*/
+
+/*=========== cons_projects_area_four css ===========*/
+.cons_projects_area_four {
+  padding-top: 60px;
+}
+.project_title {
+  font-size: 150px;
+  color: #f7f5f9;
+  font-weight: 700;
+  &.p_title {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+.cons_projects_info {
+  padding-right: 100px;
+  position: relative;
+  &:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: $orange;
+    position: absolute;
+    right: 30px;
+  }
+}
+.cons_projects_item {
+  position: relative;
+  img {
+    border-radius: 2px;
+  }
+  .media-body {
+    .title_head {
+      color: #2f3640;
+      margin-bottom: 55px;
+    }
+  }
+  & + .cons_projects_item {
+    margin-top: 100px;
+  }
+}
+.number_circle {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: rgba(242, 117, 7, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s linear;
+  right: -108px;
+  z-index: 1;
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    z-index: -1;
+  }
+  &:before {
+    width: 65px;
+    height: 65px;
+    background: rgba(242, 117, 7, 0.3);
+  }
+  &:after {
+    left: 50%;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgba(242, 117, 7, 0.7);
+    animation: scalePlus 3s infinite;
+    transform: translate(-50%, -50%);
+    animation-delay: 1.5s;
+    will-change: transform;
+  }
+  span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f27507;
+    text-align: center;
+    line-height: 52px;
+    transition: all 0.2s linear;
+  }
+}
+/*=========== cons_projects_area_four css ===========*/
+
+/*=========== cons_projects_gallery_two css ===========*/
+.cons_projects_gallery_two {
+  padding: 200px 0px 100px;
+}
+.pr_gallery_slider {
+  height: 600px;
+  .slick-track,
+  .slick-list {
+    height: 100%;
+  }
+  .item {
+    display: flex;
+    align-items: flex-end;
+  }
+  .content {
+    padding-bottom: 90px;
+    h6,
+    h3 {
+      color: #fff;
+    }
+    h6 {
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 2.1px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 38px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+  }
+}
+/*=========== cons_projects_gallery_two css ===========*/
+
+/*=========== cons_projects_area_six css ===========*/
+.cons_projects_area_six {
+  padding: 100px 0px;
+  &.pt_200 {
+    padding: 200px 0px;
+  }
+  .cons_project_slider_four {
+    overflow: visible;
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -102%;
+      top: 0;
+      background: #fff;
+      z-index: 2;
+    }
+    .swiper-wrapper {
+      margin-left: -350px;
+    }
+    .swiper-slide {
+      img {
+        max-width: 100%;
+      }
+      &.w1 {
+        width: 40.2%;
+        .project_slider_item {
+          .content {
+            padding: 70px;
+          }
+        }
+      }
+      &.w2 {
+        width: 19.3%;
+      }
+      &.w3 {
+        width: 18%;
+      }
+    }
+    .project_slider_item {
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      border-radius: 2px;
+      cursor: pointer;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #1e2228;
+        opacity: 0;
+        z-index: 0;
+        transition: opacity 0.3s linear;
+      }
+      .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 30px;
+        transform: translateY(10%);
+        opacity: 0;
+        transition: all 0.4s linear;
+        h5,
+        h3 {
+          color: #fff;
+        }
+        h5 {
+          text-transform: uppercase;
+          font-size: 14px;
+          letter-spacing: 2.1px;
+          margin-bottom: 30px;
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 38px;
+          margin-bottom: 0;
+        }
+      }
+      &:hover {
+        &:before {
+          opacity: 0.7;
+        }
+        .content {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  .theme_btn_two {
+    margin-top: 90px;
+  }
+  .cons_project_slider_six {
+    .slick-list {
+      padding-left: 0 !important;
+      overflow: visible;
+      .slick-slide {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+    .pr_gallery_item {
+      position: relative;
+      .content {
+        position: absolute;
+        left: 0;
+        bottom: 45px;
+        h2 {
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 56px;
+        }
+      }
+    }
+    &.cons_project_slider_text {
+      .pr_gallery_item {
+        .content {
+          top: 50%;
+          transform: translateY(-50%);
+          bottom: auto;
+          .theme_btn_two {
+            &:hover {
+              box-shadow: 0px 15px 50px 0px rgba(242, 117, 7, 0.6);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*=========== cons_projects_area_six css ===========*/
+
+/*=========== cons_projects_area_seven  css ===========*/
+.cons_projects_area_seven {
+  padding: 100px 0px;
+}
+.cons_project_slider_five {
+  margin-bottom: 100px;
+  .swiper-slide {
+    &.w1 {
+      width: 24.5%;
+    }
+    &.w2 {
+      width: 40.13%;
+    }
+    .pr_slider_item {
+      border-radius: 2px;
+      overflow: hidden;
+      &:before {
+        background: linear-gradient(
+          0deg,
+          rgba(30, 34, 40, 0.7) 0,
+          rgba(30, 34, 40, 0.1) 100%
+        );
+        opacity: 0;
+        transition: opacity 0.2s linear;
+      }
+      .hover-content {
+        opacity: 0;
+        transition: all 0.3s linear;
+      }
+      img {
+        max-width: 100%;
+      }
+      &:hover {
+        &:before,
+        .hover-content {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+/*=========== cons_projects_area_seven  css ===========*/
+
+/*=========== portfolio_area_three css ===========*/
+.portfolio_area_three {
+  padding: 100px 0px;
+  .row {
+    margin-bottom: -40px;
+  }
+  .portfolio_item {
+    height: 400px;
+    margin-bottom: 40px;
+  }
+}
+/*=========== portfolio_area_three css ===========*/
+
+/*=========== cons_projects_area_four css ===========*/
+.cons_projects_info_two {
+  .cons_projects_item {
+    cursor: pointer;
+    .img {
+      display: flex;
+      .number_circle {
+        background: rgba(242, 225, 194, 0.2);
+        transition: all 0.2s linear;
+        &:before {
+          background: rgba(242, 225, 194, 0.3);
+          transition: all 0.2s linear;
+        }
+        &:after {
+          background: rgba(242, 225, 194, 1);
+        }
+        span {
+          background: #f2e1c2;
+          transition: all 0.2s linear;
+        }
+      }
+      &:hover {
+        .number_circle {
+          background: rgba(242, 117, 7, 0.2);
+          &:before {
+            background: rgba(242, 117, 7, 0.3);
+          }
+          &:after {
+            background: rgba(242, 117, 7, 1);
+          }
+          span {
+            background: $orange;
+          }
+        }
+        .pr_img {
+          &:before {
+            transform: translateX(0);
+          }
+          img {
+            transform: scale(1.03);
+          }
+        }
+      }
+    }
+    .pr_img {
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      border-radius: 2px;
+      &:before {
+        content: "";
+        width: 170px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.2s linear;
+        transform: translateX(-100%);
+        z-index: 1;
+        background: $orange;
+      }
+      img {
+        transition: all 0.4s linear;
+      }
+    }
+    .pr_number {
+      font-size: 36px;
+      color: #a8aaad;
+      font-weight: 600;
+      margin-left: 30px;
+      sup {
+        font-size: 18px;
+        top: -0.7em;
+      }
+    }
+    .media-body {
+      overflow: hidden;
+      h5 {
+        font-size: 15px;
+        letter-spacing: 2.1px;
+        color: #7e8288;
+        margin-bottom: 25px;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 38px;
+        margin-bottom: 48px;
+        transition: color 0.2s linear;
+        &:hover {
+          color: $orange;
+        }
+      }
+      .btn_explor {
+        color: $orange;
+        font-size: 12px;
+        font-weight: 500;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        transform: translateX(-80%);
+        transition: all 0.2s linear;
+        i {
+          margin-left: 8px;
+        }
+        span {
+          left: -100%;
+          position: relative;
+          transition: all 0.2s linear;
+        }
+        &:hover {
+          transform: translateX(0);
+          span {
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+/*=========== cons_projects_area_four css ===========*/
+
+/*=========== cons_projects_area_eight css ===========*/
+.cons_projects_area_eight {
+  .cons_project_slider_five {
+    .pr_slider_item {
+      .hover-content {
+        padding-bottom: 24px;
+        h5 {
+          text-transform: uppercase;
+          color: $orange;
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 25px;
+        }
+        .theme_btn {
+          margin-top: 50px;
+        }
+      }
+    }
+    .w1 {
+      .pr_slider_item {
+        .hover-content {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+}
+/*=========== cons_projects_area_eight css ===========*/
+
+/*=========== cons_projects_area_nine css ===========*/
+.cons_projects_area_nine {
+  .custom_arrow {
+    margin-top: 20px;
+  }
+  .pr_slider_item {
+    overflow: hidden;
+    border-radius: 2px;
+    &:before {
+      background: linear-gradient(
+        0deg,
+        rgba(30, 34, 40, 0.9) 0,
+        rgba(30, 34, 40, 0) 100%
+      );
+      transition: all 0.3s linear;
+    }
+    .hover-content {
+      bottom: -52px;
+    }
+    .theme_btn {
+      margin-top: 50px;
+      padding: 8px 36px;
+      &:after {
+        background: $h_color;
+      }
+    }
+    &:hover {
+      &::before {
+        background: $orange;
+        opacity: 0.95;
+      }
+      .hover-content {
+        bottom: 60px;
+      }
+    }
+  }
+}
+/*=========== cons_projects_area_nine css ===========*/
