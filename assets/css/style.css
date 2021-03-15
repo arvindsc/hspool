@@ -8452,5 +8452,15 @@ header + section {
   width: 80px;
 }
 
+.logoTitle{
+
+  margin-top: -25%;
+  font-weight: 600;
+  color: #f17508;
+  font-size: 12px;
+  margin-left: 15%;
+
+}
+
 /*---------------------------------------------------- */
 /*# sourceMappingURL=style.css.map */
