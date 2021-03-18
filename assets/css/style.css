@@ -1211,7 +1211,7 @@ header + section {
 }
 
 .mb_menu li a:after {
-  content: "\f105";
+  /* content: "\f105"; */
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
