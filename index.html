@@ -14,18 +14,26 @@
     <link rel="canonical" href="https://www.hspooltiling.com/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="hspool Construction template" />
-    <!--<link
-      rel="shortcut icon"
-      href="assets/img/Pool Tiling_Logo1.png"
-      type="image/x-icon"
-    /> -->
-    <!-- for fevicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
-<link rel="manifest" href="assets/img/favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicon_io/site.webmanifest" />
 
-    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
@@ -46,12 +54,19 @@
       Swimming Pool Renovation, Repair, Replastering and Resurfacing
     </title>
     <!--for fevicon-->
-    
+
     <!-- Bootstrap CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="assets/vendors/bootstrap/css/bootstrap.min.css"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.css" />
     <link rel="stylesheet" href="assets/vendors/icomoon/style.css" />
     <link rel="stylesheet" href="assets/vendors/slick/slick.css" />
@@ -75,43 +90,23 @@
         <div class="header_top">
           <div class="container">
             <div class="row">
-              <div class="col-lg-9 col-md-10">
-                <ul class="list-unstyled menu_contact_info">
-                  <li>
-                    <a href="mailto:info@hspooltiling.com">
-                      <i class="far fa-envelope-open"></i
-                      >info@hspooltiling.com</a
-                    >
-                  </li>
-                  <li>
-                    <a href="tell:451951127851"
-                      ><i class="fas fa-phone"></i>+61 423 642 118</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="far fa-clock"></i>Mon - Sat: 8:00am -
-                      18:00pm</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-2 text-right">
-                <!-- <ul class="list-unstyled f_social">
-                  <li>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  </li>
-                </ul> -->
-              </div>
+              <ul class="list-unstyled menu_contact_info">
+                <li>
+                  <a href="mailto:info@hspooltiling.com">
+                    <i class="far fa-envelope-open"></i>info@hspooltiling.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tell:451951127851"
+                    ><i class="fas fa-phone"></i>+61 423 642 118</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="far fa-clock"></i>Mon - Sat: 8:00am - 18:00pm</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -121,7 +116,7 @@
               ><img src="assets/img/logo.png" class="logo" alt="logo" />
               <p class="logoTitle">Pool Tiling</p>
             </a>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse d-flex justify-content-center">
               <ul class="navbar-nav ml-auto menu">
                 <li class="nav-item dropdown submenu active">
                   <a href="index.html" class="nav-link"> Home </a>
@@ -141,17 +136,34 @@
                 </li>
               </ul>
             </div>
-            <ul class="list-unstyled navbar-nav navright">
-              <li>
-                <a href="#" class="menu_btn"
-                  ><i class="icon-bikini60s_menu"></i
-                ></a>
-              </li>
-            </ul>
+            <div class="d-md-none d-lg-none d-sm-none">
+              <ul class="list-unstyled navbar-nav navright">
+                <li>
+                  <a href="#" class="menu_btn"
+                    ><i class="icon-bikini60s_menu"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="d-none d-md-block">
+              <ul class="navbar-nav">
+                <li>
+                  <a
+                    href="#get-a-quote"
+                    class="theme_btn theme_btn_three hover_style1"
+                    data-animation="fadeInUp"
+                    data-delay="0.5s"
+                    >Get A Quote</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
       <!-- slider area  -->
+
       <section class="main_slider_area">
         <div class="slider-progress">
           <div class="slider_progress_bar"></div>
@@ -165,86 +177,19 @@
             <div class="container">
               <div class="slider_text">
                 <h2 data-animation="fadeInUp" data-delay="0.1s">
-                  Quality solutions in Tiling
+                  LEADING & TRUSTED SWIMMING POOL TILIERS IN SYDNEY
                 </h2>
                 <p data-animation="fadeInUp" data-delay="0.3s">
-                  Every detail is taken into account by our project engineers
+                  At HS Pools we help you create the custom pool of your dreams,
+                  without compromising on quality while saving you up to 90% on
+                  your power bills. Ask us how now.
                 </p>
                 <a
-                  href="contact.html"
+                  href="#get-a-quote"
                   class="theme_btn theme_btn_three hover_style1"
                   data-animation="fadeInUp"
                   data-delay="0.5s"
-                  >Get a Free Quote</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="slider_item"
-            style="background-image: url('./assets/img/home-one/home2.webp')"
-          >
-            <div class="overlay_bg"></div>
-            <div class="container">
-              <div class="slider_text">
-                <h2 data-animation="fadeInUp" data-delay="0.1s">
-                  Quality solutions in Tiling
-                </h2>
-                <p data-animation="fadeInUp" data-delay="0.3s">
-                  Every detail is taken into account by our project engineers
-                </p>
-                <a
-                  href="contact.html"
-                  class="theme_btn theme_btn_three hover_style1"
-                  data-animation="fadeInUp"
-                  data-delay="0.5s"
-                  >Get a Free Quote</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="slider_item"
-            style="background-image: url('./assets/img/home-one/home3.webp')"
-          >
-            <div class="overlay_bg"></div>
-            <div class="container">
-              <div class="slider_text">
-                <h2 data-animation="fadeInUp" data-delay="0.1s">
-                  Quality solutions in Tiling
-                </h2>
-                <p data-animation="fadeInUp" data-delay="0.3s">
-                  Every detail is taken into account by our project engineers
-                </p>
-                <a
-                  href="contact.html"
-                  class="theme_btn theme_btn_three hover_style1"
-                  data-animation="fadeInUp"
-                  data-delay="0.5s"
-                  >Get a Free Quote</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="slider_item"
-            style="background-image: url('./assets/img/home-one/home4.webp')"
-          >
-            <div class="overlay_bg"></div>
-            <div class="container">
-              <div class="slider_text">
-                <h2 data-animation="fadeInUp" data-delay="0.1s">
-                  Quality solutions in Tiling
-                </h2>
-                <p data-animation="fadeInUp" data-delay="0.3s">
-                  Every detail is taken into account by our project engineers
-                </p>
-                <a
-                  href="contact.html"
-                  class="theme_btn theme_btn_three hover_style1"
-                  data-animation="fadeInUp"
-                  data-delay="0.5s"
-                  >Get a Free Quote</a
+                  >Claim Your Free Pool Consult Now</a
                 >
               </div>
             </div>
@@ -274,20 +219,6 @@
           </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <!-- <ul class="list-unstyled social_links"> 
-          <li>
-            <a href="#" title=""><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#" title=""><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#" title=""><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#" title=""><i class="fab fa-dribbble"></i></a>
-          </li>
-        </ul> -->
         <div class="copyright">
           <p>
             Copyright © 2020 <a href="#" title="">vssconsulting</a> All Rights
@@ -306,10 +237,18 @@
             <div class="col-lg-4 col-sm-6">
               <div class="offer_service_item pr_slider_item wow fadeInUp">
                 <div class="hover-content">
-                  <i class="icon fas fa-clipboard"></i>
-                  <a href="#">
-                    <h4>Plaster</h4>
-                  </a>
+                  <div class="hover-content-header">
+                    <i class="icon fas fa-clipboard"></i>
+                    <a href="#">
+                      <h5>Mineral Pool As Standard</h5>
+                    </a>
+                  </div>
+                  <p>
+                    You’ll feel the difference with mineral water as a standard
+                    upgrade. Forget salt or chlorine, our top-of-the-line
+                    crystal clear mineral pools have no smell, don’t sting the
+                    eyes and are like swimming in distilled water.
+                  </p>
                   <a href="#" class="text_btn" data-text="See service"
                     >See service
                     <i class="fas fa-angle-double-right"></i>
@@ -323,14 +262,17 @@
                 data-wow-delay="0.2s"
               >
                 <div class="hover-content">
-                  <img
-                    class="icon"
-                    style="width: 64px; height: 74px"
-                    src="./assets/img/icon-pool-tech-wht.svg"
-                  />
-                  <a href="#">
-                    <h4>Specialist Services</h4>
-                  </a>
+                  <div class="hover-content-header">
+                    <i class="icon fas fa-dollar-sign"></i>
+                    <h5>Recoup The Hidden Costs</h5>
+                  </div>
+
+                  <p>
+                    You’ll feel the difference with mineral water as a standard
+                    upgrade. Forget salt or chlorine, our top-of-the-line
+                    crystal clear mineral pools have no smell, don’t sting the
+                    eyes and are like swimming in distilled water.
+                  </p>
                   <a href="#" class="text_btn" data-text="See service"
                     >See service
                     <i class="fas fa-angle-double-right"></i>
@@ -344,10 +286,17 @@
                 data-wow-delay="0.3s"
               >
                 <div class="hover-content">
-                  <i class="icon fas fa-hammer"></i>
-                  <a href="#">
-                    <h4>Complete Renovations</h4>
-                  </a>
+                  <div class="hover-content-header">
+                    <i class="icon fas fa-handshake"></i>
+                    <h5>The Personal Touch</h5>
+                  </div>
+
+                  <p>
+                    At HS Pools, the person who sells you the pool is also your
+                    swimming pool builder. No site supervisors quitting halfway
+                    through! We care about every step of your build, from start
+                    to finish and are there for you throughout.
+                  </p>
                   <a href="#" class="text_btn" data-text="See service"
                     >See service
                     <i class="fas fa-angle-double-right"></i>
@@ -359,98 +308,9 @@
         </div>
       </section>
       <!-- service menu  -->
-      <!-- cons_about_area  -->
-      <section class="cons_about_area">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <div class="cons_about_img">
-                <img
-                  class="one pool-view"
-                  src="assets/img/home-one/pool-view.jpg"
-                  alt=""
-                />
-                <img
-                  class="two man-in-pool"
-                  src="assets/img/home-one/man-in-pool.jpg"
-                  alt=""
-                />
-                <img class="dot" src="assets/img/home-one/dots.png" alt="" />
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="cons_about_content">
-                <h6 class="title_top wow fadeInUp">a little about us</h6>
-                <h2 class="title_head wow fadeInUp" data-wow-delay="0.2s">
-                  Swimming Pool Renovation & Resurfacing Experts from Sydney
-                </h2>
-                <p class="wow fadeInUp" data-wow-delay="0.3s">
-                  With more than 5 years of experience making pools beautiful
-                  again, HS Pool Pty Ltd is the leader in swimming pool
-                  renovation and resurfacing from Sydney.
-                </p>
-                <a
-                  href="./about.html"
-                  class="text_btn wow fadeInUp"
-                  data-text="Know us More "
-                  data-wow-delay="0.3s"
-                  >Know us More</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- cons_about_area  -->
-      <!-- cons_features_area  -->
-      <section class="cons_features_area">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="cons_about_content">
-                <h6 class="title_top wow fadeInUp">Main features</h6>
-                <h2 class="title_head wow fadeInUp" data-wow-delay="0.2s">
-                  Complete management of large projects
-                </h2>
-                <p class="wow fadeInUp" data-wow-delay="0.3s">
-                  Architecture, control and Tiling of projects of all kinds, we
-                  have the experts in each area of work who work relentlessly to
-                  deliver the promised perfection.
-                </p>
-                <ul class="list-unstyled">
-                  <li class="wow fadeInUp" data-wow-delay="0.1s">
-                    Teams with the best in technology
-                  </li>
-                  <li class="wow fadeInUp" data-wow-delay="0.2s">
-                    With more than 12 years of extensive experience
-                  </li>
-                  <li class="wow fadeInUp" data-wow-delay="0.3s">
-                    Most awarded architects in the world
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="features_img text-center">
-                <img
-                  class="dot_middle"
-                  src="assets/img/home-one/feature_dot.png"
-                  alt=""
-                />
-                <img
-                  class="man-in-pool-feature"
-                  src="assets/img/home-one/man-in-pool.jpg"
-                  alt="man-in-pool"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- cons_features_area  -->
 
       <!-- cons_projects_area  -->
-      <section class="cons_projects_area">
+      <!-- <section class="cons_projects_area">
         <div class="container">
           <div class="se ction_title_one">
             <h6 class="title_top wow fadeInUp" data-wow-delay="0.1s">
@@ -508,7 +368,7 @@
             >
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- cons_projects_area  -->
       <!-- cons_testimonial_area  -->
       <section class="cons_testimonial_area">
@@ -525,16 +385,6 @@
                   <strong>the location of our florist business</strong> we are
                   excited to open.
                 </h3>
-                <div class="testimonail_author">
-                  <div class="img">
-                    <img
-                      class="ai-faces"
-                      src="assets/img/home-one/Briana-wills.jpg"
-                      alt="Briana-wills"
-                    />
-                  </div>
-                  Briana Wills
-                </div>
               </div>
             </div>
             <div class="item">
@@ -547,16 +397,6 @@
                   <strong>the location of our florist business</strong> we are
                   Our Team excited to open.
                 </h3>
-                <div class="testimonail_author">
-                  <div class="img">
-                    <img
-                      class="ai-faces"
-                      src="assets/img/home-one/karen-swami.jpg"
-                      alt="Karen-swami"
-                    />
-                  </div>
-                  Karen Swami
-                </div>
               </div>
             </div>
             <div class="item">
@@ -569,22 +409,78 @@
                   <strong>the location of our florist business</strong> we are
                   excited to open.
                 </h3>
-                <div class="testimonail_author">
-                  <div class="img">
-                    <img
-                      class="ai-faces"
-                      src="assets/img/home-one/Nancy.jpg"
-                      alt="Nancy"
-                    />
-                  </div>
-                  Nancy
-                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- cons_testimonial_area  -->
+
+      <!-- cons_quote_area-->
+      <section class="container" id="get-a-quote">
+        <h3>Claim Your Free 15 Minute Pool Consultation Now</h3>
+
+        <h4>
+          Our expert pool consultant will help you understand just what is
+          possible for your build.
+          <br />
+          <br />
+          Fill out your details below and we'll be in touch for a quick 15
+          minute chat.
+        </h4>
+        <div class="quote-container">
+          <div class="quote-content">
+            <form action="#" class="contact_form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Phone Number"
+                />
+              </div>
+              <div class="form-group">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Your Budget</option>
+                  <option value="1">$10,000 to $25,000</option>
+                  <option value="2">$25,000 to $40,000</option>
+                  <option value="3">$40,000 to $55,000</option>
+                  <option value="4">$55,000 +</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="theme_btn theme_btn_three hover_style1"
+                >
+                  Send Request
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- cons_quote_area-->
 
       <!-- cons footer_area  -->
       <footer class="footer_area">
@@ -679,7 +575,7 @@
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendors/slick/slick.min.js"></script>
