@@ -80,6 +80,12 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/contactStyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
   </head>
 
   <body>
@@ -91,8 +97,8 @@
         <nav class="navbar navbar-expand-lg" id="header">
           <div class="container">
             <a class="navbar-brand" href="#"
-              ><img src="assets/img/logo.png" class="logo" alt="logo" />
-              <p class="logoTitle">Pool Tiling</p>
+              ><img src="assets/img/logo.png" class="logo-contact-page" alt="logo" />
+              <p class="logo-title-contact-page">Pool Tiling</p>
             </a>
             <div
               class="collapse navbar-collapse d-flex justify-content-center d-none d-md-block"
@@ -192,6 +198,10 @@
             <a href="#" title=""><i class="fab fa-dribbble"></i></a>
           </li>
         </ul> -->
+
+        <!--this is going to be the map section-->
+        
+        <!--Map part ends here-->
         <div class="copyright">
           <p>
             Copyright © 2020 <a href="#" title="">vssconsulting</a> All Rights
@@ -203,8 +213,9 @@
       <!--================= mobile menu =================-->
       <!-- cons_contact_area_two  -->
       <section class="cons_contact_area_two map_area">
+        <div id="myMap"></div>
         <img class="map img-fluid" src="assets/img/home-six/map.png" alt="" />
-        <div class="container">
+        <div class="container-contact-page">
           <div class="quote-container">
             <div class="quote-content">
               <form action="#" class="contact_form">
@@ -363,5 +374,13 @@
     <script src="assets/js/parallax.js"></script>
     <script src="assets/js/jquery.parallax-scroll.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      const issMap = L.map('myMap').setView([28.383429, 77.041766], 13);
+      const attribution = ' &copy; <a href="https://www.openstreetmap.org/copyright"> open street</a> contributors';
+       const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+       const tiles = L.tileLayer(tileUrl,{attribution});
+       tiles.addTo(issMap);
+       const marker = L.marker([28.383429, 77.041766]).addTo(issMap);
+   </script>
   </body>
 </html>
