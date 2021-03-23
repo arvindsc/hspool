@@ -1905,14 +1905,14 @@
     font-size: 18px;
     line-height: 30px;
   }
-  .slider_text h2,
+  .slider_text h2, h3, h4,
   .main_slider_area_five .main_slider .slider_text h2,
   .main_slider_area_eight.main_slider_area_fifteen
     .main_slider
     .slider_text
     h2 {
-    font-size: 31px;
-    line-height: 46px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .main_slider_area_eight .main_slider .slider_text h5 {
     font-size: 20px;
