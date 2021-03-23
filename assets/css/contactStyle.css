@@ -1,0 +1,22 @@
+.form-select {
+  border-color: #363d48;
+  height: 60px;
+  border: 2px solid #e5e5e6;
+  font-size: 15px;
+  border-radius: 2px;
+  line-height: 60px;
+  padding: 0px;
+  padding-left: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #1e2228;
+  transition: all 0.2s linear;
+  box-shadow: none;
+}
+.form-select:focus {
+  border: 2px solid #f27507 !important;
+  box-shadow: none;
+}
+option:hover {
+  background-color: #f27507 !important;
+}

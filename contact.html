@@ -79,6 +79,7 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/contactStyle.css" />
   </head>
 
   <body>
@@ -91,36 +92,53 @@
           <div class="container">
             <a class="navbar-brand" href="#"
               ><img src="assets/img/logo.png" class="logo" alt="logo" />
-              <p class="logoTitle">Pool Tiling</p></a
+              <p class="logoTitle">Pool Tiling</p>
+            </a>
+            <div
+              class="collapse navbar-collapse d-flex justify-content-center d-none d-md-block"
             >
-            <div class="collapse navbar-collapse">
               <ul class="navbar-nav ml-auto menu">
-                <li class="nav-item dropdown submenu">
+                <li class="nav-item dropdown submenu active">
                   <a href="index.html" class="nav-link"> Home </a>
                 </li>
                 <li class="nav-item dropdown submenu">
-                  <a href="projects.html" class="nav-link"> About Us </a>
+                  <a href="about.html" class="nav-link"> About Us </a>
                 </li>
-                <li class="nav-item dropdown submenu">
-                  <a href="about.html" class="nav-link"> Projects </a>
-                </li>
-                <li class="nav-item dropdown submenu">
-                  <a href="projects.html" class="nav-link"> Services </a>
+                <li class="nav-item dropdown">
+                  <a href="projects.html" class="nav-link"> Projects </a>
                 </li>
                 <li class="nav-item dropdown submenu">
                   <a href="service-details.html" class="nav-link">Services</a>
                 </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html"><i class="fas fa-phone"></i>&nbsp;Contact</a>
+                </li>
               </ul>
             </div>
-              <div class="d-md-none d-lg-none d-sm-none">
-            <ul class="list-unstyled navbar-nav navright">
-              <li>
-                <a href="#" class="menu_btn"
-                  ><i class="icon-bikini60s_menu"></i
-                ></a>
-              </li>
-            </ul>
-              <div class="d-md-none d-lg-none d-sm-none"></div>
+            <div class="d-md-none d-lg-none d-sm-none">
+              <ul class="list-unstyled navbar-nav navright">
+                <li>
+                  <a href="#" class="menu_btn"
+                    ><i class="icon-bikini60s_menu"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="d-none d-md-block">
+              <ul class="navbar-nav">
+                <li>
+                  <a
+                    href="#get-a-quote"
+                    class="theme_btn theme_btn_three hover_style1"
+                    data-animation="fadeInUp"
+                    data-delay="0.5s"
+                    >Get A Quote</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
@@ -187,28 +205,8 @@
       <section class="cons_contact_area_two map_area">
         <img class="map img-fluid" src="assets/img/home-six/map.png" alt="" />
         <div class="container">
-          <div class="row cons_contact_info_two">
-            <div class="map_dot">
-              <div class="map_marker one"><span></span></div>
-              <div class="map_marker two"><span></span></div>
-              <div class="map_marker three"><span></span></div>
-            </div>
-            <div class="col-lg-6">
-              <div class="cons_about_content pr_100">
-                <h6 class="title_top">main office</h6>
-                <h2 class="title_head">
-                  1/20 Drummond Street Warwick Farm, 2170 Sydney Australia
-                </h2>
-                <p>
-                  Call us anytime, we strive to answer all inquiries within 24
-                  hours.
-                </p>
-                <a href="#" class="text_btn" data-text="Make a call"
-                  >Make a call</a
-                >
-              </div>
-            </div>
-            <div class="col-lg-6">
+          <div class="quote-container">
+            <div class="quote-content">
               <form action="#" class="contact_form">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Name" />
@@ -217,9 +215,26 @@
                   <input
                     type="email"
                     class="form-control"
-                    placeholder="E.g., info@hspooltiling.com"
+                    placeholder="Your Email"
                   />
                 </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Phone Number"
+                  />
+                </div>
+                <div class="form-group">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Your Budget</option>
+                    <option value="1">$10,000 to $25,000</option>
+                    <option value="2">$25,000 to $40,000</option>
+                    <option value="3">$40,000 to $55,000</option>
+                    <option value="4">$55,000 +</option>
+                  </select>
+                </div>
+  
                 <div class="form-group">
                   <textarea
                     class="form-control"
@@ -235,12 +250,12 @@
                     type="submit"
                     class="theme_btn theme_btn_three hover_style1"
                   >
-                    Seend Message
+                    Send Request
                   </button>
                 </div>
               </form>
             </div>
-          </div>
+          </div> 
         </div>
       </section>
       <!-- cons_contact_area_two  -->
