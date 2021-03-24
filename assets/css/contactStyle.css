@@ -36,4 +36,12 @@ option:hover {
   position: static;
   z-index: -1;
 }
+.element-icon {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+    transform: scale(6);
+    color: blue;
+}
 
