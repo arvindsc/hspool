@@ -1,0 +1,47 @@
+.form-select {
+  border-color: #363d48;
+  height: 60px;
+  border: 2px solid #e5e5e6;
+  font-size: 15px;
+  border-radius: 2px;
+  line-height: 60px;
+  padding: 0px;
+  padding-left: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #1e2228;
+  transition: all 0.2s linear;
+  box-shadow: none;
+}
+.form-select:focus {
+  border: 2px solid #f27507 !important;
+  box-shadow: none;
+}
+option:hover {
+  background-color: #f27507 !important;
+}
+.logo-contact-page {
+  width: 60px;
+  margin: 1em 0 0 0.2em;
+}
+.logo-title-contact-page {
+  margin-top: -25%;
+  font-weight: 600;
+  color: #f17508;
+  font-size: 0.6rem;
+  margin-left: 15%;
+}
+#myMap {
+  height: 340px;
+  position: static;
+  z-index: -1;
+}
+.element-icon {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+    transform: scale(6);
+    color: blue;
+}
+
